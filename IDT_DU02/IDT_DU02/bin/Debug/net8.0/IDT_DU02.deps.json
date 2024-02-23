@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IDT_DU02/1.0.0": {
+        "runtime": {
+          "IDT_DU02.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IDT_DU02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

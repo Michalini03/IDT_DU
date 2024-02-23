@@ -1,0 +1,14 @@
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\IDT_DU02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\IDT_DU02.AssemblyInfoInputs.cache
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\IDT_DU02.AssemblyInfo.cs
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\IDT_DU02.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\bin\Debug\net8.0\IDT_DU02.exe
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\bin\Debug\net8.0\IDT_DU02.deps.json
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\bin\Debug\net8.0\IDT_DU02.runtimeconfig.json
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\bin\Debug\net8.0\IDT_DU02.dll
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\bin\Debug\net8.0\IDT_DU02.pdb
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\IDT_DU02.dll
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\refint\IDT_DU02.dll
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\IDT_DU02.pdb
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\IDT_DU02.genruntimeconfig.cache
+C:\Users\micha\source\repos\ZCU\IDT_DU02\IDT_DU02\obj\Debug\net8.0\ref\IDT_DU02.dll
