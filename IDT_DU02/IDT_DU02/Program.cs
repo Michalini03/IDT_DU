@@ -181,38 +181,29 @@ public class PlanEvent
     }
 
 
-    public static PlanEvent[][] Combinations(PlanEvent[] list)
+    // FUNKCE, KTERÁ FUNGUJE NA ZPŮSOB KOMBINATORIKY -> VYTVOŘÍ KOMBINACI VŠECH MOŽNÝCH ROZVRHŮ
+public static PlanEvent[][] Combinations(PlanEvent[] list)
+{
+    List<PlanEvent[]> vysledek = new List<PlanEvent[]>();
+    int n = list.Length;
+
+    for (int i = 0; i < n - 4; i++)
     {
-        PlanEvent[][] list_ = new PlanEvent[0][];
-        for (int i = 0; i < list.Length; i++)
+        for (int j = i + 1; j < n - 3; j++)
         {
-            for (int j = 0; j < (list.Length - i); j++)
+            for (int k = j + 1; k < n - 2; k++)
             {
-                if (i != j)
+                for (int l = k + 1; l < n - 1; l++)
                 {
-                    for (int k = 0; k < (list.Length - j); k++)
+                    for (int m = l + 1; m < n; m++)
                     {
-                        if (i != k && j != k)
-                        {
-                            for (int l = 0; l < (list.Length - k); l++)
-                            {
-                                if (i != l && j != l && k != l)
-                                {
-                                    for (int m = 0; m < (list.Length - l); m++)
-                                    {
-                                        if (i != m && j != m && k != m && l != m)
-                                        {
-                                            PlanEvent[] nove_data = new PlanEvent[] { list[i], list[j], list[k], list[l], list[m] };
-                                            list_ = list_.Append(nove_data).ToArray();
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        PlanEvent[] kombinace = new PlanEvent[] { list[i], list[j], list[k], list[l], list[m] };
+                        vysledek.Add(kombinace);
                     }
                 }
             }
         }
-        return list_;
     }
+    return vysledek.ToArray();
+}
 }
