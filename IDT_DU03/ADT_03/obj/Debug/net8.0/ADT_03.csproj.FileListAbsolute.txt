@@ -1,0 +1,14 @@
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\bin\Debug\net8.0\ADT_03.exe
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\bin\Debug\net8.0\ADT_03.deps.json
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\bin\Debug\net8.0\ADT_03.runtimeconfig.json
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\bin\Debug\net8.0\ADT_03.dll
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\bin\Debug\net8.0\ADT_03.pdb
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\ADT_03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\ADT_03.AssemblyInfoInputs.cache
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\ADT_03.AssemblyInfo.cs
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\ADT_03.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\ADT_03.dll
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\refint\ADT_03.dll
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\ADT_03.pdb
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\ADT_03.genruntimeconfig.cache
+C:\Users\micha\source\repos\ZCU\ADT_03\ADT_03\obj\Debug\net8.0\ref\ADT_03.dll
