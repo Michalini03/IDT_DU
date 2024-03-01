@@ -31,30 +31,30 @@ public class Ukol3
     {
         Random random = new Random();
         int[] testMatch = dataGenerator();
-        int num = random.Next(0, testMatch[testMatch.Length - 1]);
-        bool IS = finderIS.Find(num, testMatch);
-        bool S = finderS.Find(num, testMatch);
-        if (IS != S)
-        {
-            Console.WriteLine("Máš to špatně!");
-            return false;
+        for (int i = 0; i < 10000; i ++) { 
+            int num = random.Next(0, testMatch[testMatch.Length]);
+            bool IS = finderIS.Find(num, testMatch);
+            bool S = finderS.Find(num, testMatch);
+            if (IS != S)
+            {
+                Console.WriteLine("Máš to špatně!");
+                return false;
+            }
         }
         return true;
     }
 
-    // FUNKCE, KTERÁ ZJISTÍ RYCHLOST OBOU METOD A POROVNÁ JE
-    static string testFinderSpeed(IFinder finderIS, IFinder finderS)
+    // FUNKCE, KTERÁ ZJISTÍ RYCHLOST OBOU METOD A POROVNÁ JE (PRO ÚLOHU 3. DOPLNÍM DO PARAMETRU I DATA, KTERÁ BUDU POROVNÁVAT)
+    static string testFinderSpeed(IFinder finderIS, IFinder finderS, int[] testSpeed)
     {
         Random random = new Random();
-        int[] testSpeed = dataGenerator();
-        
         DateTime startIS = DateTime.Now;
         for (int i = 0; i < 10000; i++) {
             int num = random.Next(0, testSpeed[testSpeed.Length - 1]);
             bool found = finderIS.Find(num, testSpeed);
         }
         DateTime stopIS = DateTime.Now;
-        Console.WriteLine("Čas testování IntervalSubdivisionFinder: " + (stopIS - startIS).TotalMilliseconds * 1000 + " ns");
+        Console.WriteLine("Čas testování binárního hledání: " + (stopIS - startIS).TotalMilliseconds * 1000 + " ns");
 
         DateTime startS = DateTime.Now;
         for (int i = 0; i < 10000; i++)
@@ -67,7 +67,7 @@ public class Ukol3
 
         if (stopIS - startIS < stopS - startS)
         {
-            return "Interval Subdivision Finder je rychlejší o " + (stopIS - startIS) / (stopS - startS) + " násobek";
+            return "Binární Finder je rychlejší o " + ((stopS - startS).TotalMilliseconds / (stopIS - startIS).TotalMilliseconds) + " násobek";
         }
         else if (stopIS - startIS == stopS - startS)
         {
@@ -75,10 +75,11 @@ public class Ukol3
         }
         else
         {
-            return "Sekvenční Finder je rychlejší o " + (stopS - startS) / (stopIS - startIS) + " násobek";
+            return "Sekvenční Finder je rychlejší o " + ((stopIS - startIS).TotalMilliseconds / (stopS - startS).TotalMilliseconds) + " násobek";
         }
     }
 
+    // FUNKCE, KTERÁ ZJISTÍ JESTLI JSOU DATA SEŘAZENA
     static bool isSorted(int[] data)
     {
         for (int i = 0; i < data.Length; i++)
@@ -93,19 +94,18 @@ public class Ukol3
         return true;
     }
 
+    // FUNKCE, KTERÁ NAČTE DATA Z TEXTOVÉHO DOKUMENT
     static int[] readData(string path)
     {
         string line;
         int[] data = new int[0];
-        StreamReader sr = new StreamReader(path); // Čtení ze souboru s názvem "matrix.txt" (soubour "matrix.txt" se nachází ve složce \bin\Debug, aby se načítala lehčím způsobem);
-        while ((line = sr.ReadLine()) != null)
+        StreamReader sr = new StreamReader(path); // Čtení ze souboru s názvem z argumentu (soubour se nachází ve složce \bin\Debug, aby se načítala lehčím způsobem);
+        line = sr.ReadLine();
+        while (line != null)
         {
-            data = data.Append(Int32.Parse(line)).ToArray();
+            data = data.Append(int.Parse(line)).ToArray();
             line = sr.ReadLine();
         }
-
-
-        
         return data;
     }
 
@@ -143,14 +143,17 @@ public class Ukol3
             if (isSorted(info) )
             {
                 Console.WriteLine("Data jsou řádně seřazeny");
+                Console.WriteLine("Počet dat v souboru: " + info.Length);
+                Console.WriteLine(testFinderSpeed(IS, S, info));
             }
             else
             {
                 Console.WriteLine("Data nejsou seřazeny, ověřte zdroj informací");
             }
-            Console.WriteLine("Počet dat v souboru: " + info.Length);
+            
             Console.WriteLine();
         }
+
        // bool vyhodnoceni = testFinderMatch(IS, S);
        // Console.WriteLine(testFinderSpeed(IS, S));
         
@@ -169,12 +172,13 @@ public class Ukol3
 }
 
 
+// VYTVOŘENÍ INTERFACE PRO FINDER
 public interface IFinder
 {
     bool Find(int x, int[] data);
 }
 
-
+// BINÁRNÍ FINDER
 public class IntervalSubdivisionFinder : IFinder
 {
     public bool Find(int x, int[] data)
@@ -203,7 +207,7 @@ public class IntervalSubdivisionFinder : IFinder
     }
 }
 
-
+// SEKVENČNÍ FINDER
 public class SequentialFinder : IFinder
 {
     public bool Find(int x, int[] data)
