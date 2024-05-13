@@ -1,0 +1,14 @@
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\bin\Debug\net8.0\idt_13.exe
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\bin\Debug\net8.0\idt_13.deps.json
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\bin\Debug\net8.0\idt_13.runtimeconfig.json
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\bin\Debug\net8.0\idt_13.dll
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\bin\Debug\net8.0\idt_13.pdb
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\idt_13.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\idt_13.AssemblyInfoInputs.cache
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\idt_13.AssemblyInfo.cs
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\idt_13.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\idt_13.dll
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\refint\idt_13.dll
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\idt_13.pdb
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\idt_13.genruntimeconfig.cache
+C:\Users\micha\source\repos\ZCU\idt_13\idt_13\obj\Debug\net8.0\ref\idt_13.dll
